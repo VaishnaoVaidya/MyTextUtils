@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/vaishno7410/MyTextUtils.git/static/css/main.c36cb96b.css",
+    "main.js": "/vaishno7410/MyTextUtils.git/static/js/main.da53a025.js",
+    "static/js/787.719ec76d.chunk.js": "/vaishno7410/MyTextUtils.git/static/js/787.719ec76d.chunk.js",
+    "index.html": "/vaishno7410/MyTextUtils.git/index.html",
+    "main.c36cb96b.css.map": "/vaishno7410/MyTextUtils.git/static/css/main.c36cb96b.css.map",
+    "main.da53a025.js.map": "/vaishno7410/MyTextUtils.git/static/js/main.da53a025.js.map",
+    "787.719ec76d.chunk.js.map": "/vaishno7410/MyTextUtils.git/static/js/787.719ec76d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c36cb96b.css",
+    "static/js/main.da53a025.js"
+  ]
+}
