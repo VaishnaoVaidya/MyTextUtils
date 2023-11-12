@@ -26,7 +26,19 @@ function App() {
             setAlert(null);
       }, 3000)
   }
-  const toggleMode = ()=>{
+  // const removeBodyclasses = ()=>{
+  //   document.body.classList.remove( 'bg-danger' );
+  //   document.body.classList.remove( 'bg-light' );
+  //   document.body.classList.remove( 'bg-dark' );
+  //   document.body.classList.remove( 'bg-warning' );
+  //   document.body.classList.remove( 'bg-success' );
+  //   document.body.classList.remove( 'bg-danger' );
+  //   document.body.classList.remove( 'bg-primary' );
+  // }
+  const toggleMode = (cls)=>{
+    // removeBodyclasses();
+    // console.log(cls)
+    // document.body.classList.add('bd-'+cls)
     if(mode === "light"){
       setMode("dark");
       document.body.style.backgroundColor = "rgb(3 37 71)"
@@ -48,9 +60,9 @@ function App() {
     }
   }
   return (
-  <>
-{/* <Navbar title="TextUtils" aboutText="About TextUtils"/> */}
-{/* <Navbar/> */}
+    <>
+    {/* <Navbar title="TextUtils" aboutText="About TextUtils"/> */}
+    {/* <Navbar/> */}
 <Router>
 <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} />
 <Alert alert={alert}/>

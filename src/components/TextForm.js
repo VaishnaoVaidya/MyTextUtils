@@ -1,4 +1,4 @@
-import React, {startTransition, useState} from 'react'
+import React, {useState} from 'react'
 
 
 
@@ -32,10 +32,11 @@ export default function TextForm(props) {
   }
 
   const handleCopy = () => {
-    var text = document.getElementById("myBox")
-    text.select()
-    navigator.clipboard.writeText(text.value)
-    document.getSelection().removeAllRanges()
+    // var text = document.getElementById("myBox")
+    // text.select()
+    navigator.clipboard.writeText(text)
+    // navigator.clipboard.writeText(text.value)
+    // document.getSelection().removeAllRanges()
     props.showAlert("Copied to Clickboard!", "success")
 
   }
@@ -71,7 +72,7 @@ export default function TextForm(props) {
     {/* <div className="container my-2" style={{color:props.mode==='dark'?'white':'black'}}> */}
     <div className="container my-2" style={{color:props.mode==='light'?'black':'white'}}>
       <h2>Your text summary</h2>
-    <p>{text.split(" ").filter((element)=>{return element.length!==0}).length} words and {text.length} characters</p>
+    <p>{text.split(/\s+/).filter((element)=>{return element.length!==0}).length} words and {text.length} characters</p>
     <p>{0.008 * text.split(" ").filter((element)=>{return element.length!==0}).length} Minutes to read</p>
     <h2>Preview</h2>
     <p>{text.length>0?text:"Nothing to preview here!"}</p>
